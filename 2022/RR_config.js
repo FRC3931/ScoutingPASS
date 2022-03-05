@@ -4,8 +4,6 @@ var config_data = `
   "page_title":"Rapid React",
   "elements":{
     "prematch": {
-      
-      
       "Match Level":{
         "code":"l",
         "type":"level",
@@ -26,7 +24,7 @@ var config_data = `
         "max":100,
         "required":"true"
       },
-     "Team #": {
+      "Team #": {
         "code":"t",
         "type":"team",
         "min":1,
@@ -218,7 +216,6 @@ var config_data = `
         "size":15,
         "maxSize":50
       }
-      
     }
   }
 }`;
