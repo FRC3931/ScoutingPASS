@@ -4,12 +4,19 @@ var config_data = `
   "page_title":"Rapid React",
   "elements":{
     "prematch": {
+      "Scouter Initials": {
+        "code":"s",
+        "type":"scouter",
+        "size":5,
+        "maxSize":5,
+        "required":"true"
+      },
       "Event":{
         "code":"e",
         "type":"event",
         "defaultValue":"2022okok",
         "required":"true",
-        "disabled":"true",
+        "disabled":"true"
       },
       "Match Level":{
         "code":"l",
@@ -31,13 +38,7 @@ var config_data = `
         "max":100,
         "required":"true"
       },
-      "Team #": {
-        "code":"t",
-        "type":"team",
-        "min":1,
-        "max":99999
-      },
-      "Robot": {
+     "Robot": {
         "code":"r",
         "type":"robot",
         "choices":{
@@ -50,12 +51,11 @@ var config_data = `
         },
         "required":"true"
       },
-     "Scouter Initials": {
-        "code":"s",
-        "type":"scouter",
-        "size":5,
-        "maxSize":5,
-        "required":"true"
+      "Team #": {
+        "code":"t",
+        "type":"team",
+        "min":1,
+        "max":99999
       },
       "Auto Start Position": {
         "code":"as",
@@ -103,8 +103,8 @@ var config_data = `
         "type":"bool"
       },
       "Turret": {
-        "code":"tur",
-        "title": "Turret",
+        "code":"wbt",
+        "title": "Turret?",
         "type":"bool"
       },
       "Cargo Intake From": {
@@ -158,8 +158,13 @@ var config_data = `
         "code":"be",
         "title": "Started climb before EndGame",
         "type":"bool"
+      },
+      "Num of Robots Climbed": {
+        "code":"cn",
+        "title": "# of alliance bots climbed",
+        "type":"counter"
       }
-     },
+    },
     "postmatch": {
       "Driver Skill": {
         "code":"ds",
@@ -205,6 +210,13 @@ var config_data = `
         "title": "Make good alliance partner?",
         "type":"bool"
       },
+      "Comments": {
+        "code":"co",
+        "title": "Comments",
+        "type":"text",
+        "size":15,
+        "maxSize":50
+      },
       "Confidence Rating": {
         "code":"cnf",
         "title": "Confidence Rating",
@@ -215,14 +227,7 @@ var config_data = `
           "n":"Not Confident"
       },
        "defaultValue":"a"
-    },
-    "Comments": {
-        "code":"co",
-        "title": "Comments",
-        "type":"text",
-        "size":15,
-        "maxSize":50
-      }
+    }
     }
   }
 }`;
