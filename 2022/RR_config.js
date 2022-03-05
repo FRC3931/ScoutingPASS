@@ -98,7 +98,7 @@ var config_data = `
         "type":"bool"
       },
       "Turret": {
-        "code":"t",
+        "code":"tur",
         "title": "Turret",
         "type":"bool"
       },
