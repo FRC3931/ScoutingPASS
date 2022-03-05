@@ -4,6 +4,13 @@ var config_data = `
   "page_title":"Rapid React",
   "elements":{
     "prematch": {
+      "Event":{
+        "code":"e",
+        "type":"event",
+        "defaultValue":"2022okok",
+        "required":"true",
+        "disabled":"true",
+      },
       "Match Level":{
         "code":"l",
         "type":"level",
